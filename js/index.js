@@ -1,13 +1,24 @@
-/*=== INIT WOW ===*/
+/*
+   INIT WOW
+*/
+
 new WOW().init();
 
-/*=== INIT COUNTUP ===*/
+/*
+   INIT COUNTUP
+*/
+
+// Numbers
 $(".counter").countUp({
    time: 2000,
    delay: 10,
 });
 
-/*=== INIT SWIPERJS - FEEDBACK SLIDER===*/
+/*
+   INIT SWIPERJS
+*/
+
+// Feedback Slider
 var imgSlider = new Swiper(".feedback__client", {
    slidesPerView: 3,
    spaceBetween: 10,
@@ -34,14 +45,20 @@ var commentSlider = new Swiper(".feedback__text", {
    },
 });
 
-/*=== INIT SWIPERJS - BLOG SLIDER ===*/
+/*
+   INIT SWIPERJS 
+*/
+
+// Blog Slider
 var blogSlider = new Swiper(".blog__content", {
    slidesPerView: 3,
    spaceBetween: 30,
    loop: true,
 });
 
-/*=== SCROLL TO TOP ===*/
+/*
+   SCROLL TO TOP
+*/
 $(window).scroll(function () {
    if ($(this).scrollTop() > 50) {
       $(".scrollToTop").fadeIn();
@@ -55,7 +72,9 @@ $(".scrollToTop").click(function () {
    return false;
 });
 
-/*=== PORTFOLIO GALLERY ===*/
+/*
+   PORTFOLIO GALLERY
+*/
 lightGallery(document.getElementById("animated-thumbnails"), {
    selector: ".portfolio-img",
    plugins: [lgZoom, lgThumbnail, lgAutoplay, lgFullscreen, lgShare],
