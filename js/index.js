@@ -1,7 +1,6 @@
 /*
    INIT WOW
 */
-
 new WOW().init();
 
 /*
@@ -17,7 +16,7 @@ $(".counter").countUp({
    INIT SWIPERJS
 */
 
-// Feedback Slider
+// Feedback Thums
 var imgSlider = new Swiper(".feedback__client", {
    slidesPerView: 3,
    spaceBetween: 10,
@@ -28,6 +27,7 @@ var imgSlider = new Swiper(".feedback__client", {
    freeMode: true,
 });
 
+// Feedback comment
 var commentSlider = new Swiper(".feedback__text", {
    spaceBetween: 10,
    loop: true,
@@ -74,6 +74,8 @@ $(".scrollToTop").click(function () {
 /*
    PORTFOLIO GALLERY
 */
+
+// Portfolio
 lightGallery(document.getElementById("animated-thumbnails"), {
    selector: ".portfolio-img",
    plugins: [lgZoom, lgThumbnail, lgAutoplay, lgFullscreen, lgShare],
