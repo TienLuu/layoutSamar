@@ -10,8 +10,7 @@ new WOW().init();
 
 // Numbers
 $(".counter").countUp({
-   time: 2000,
-   delay: 10,
+   time: 1000,
 });
 
 /*
